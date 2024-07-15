@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Signika+Negative&family=Teko:wght@300&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Lemon', serif;
+}
+
+
+
+nav{
+    position: absolute;
+    background: #000;
+    width: 99.5vw;
+    padding: 5px;
+    height: fit-content;
+    mix-blend-mode:multiply;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 0%;
+}
+nav>ul>li{
+    color: white;
+    list-style: none;
+    font-size: 25px;
+    margin-top: 10px;
+    border: 2px solid white;
+    padding: 5px;
+}
+
+
+
+
+
+
+.intro{
+    width: 100vw;
+    height: 105vh;
+}
+
+.intro>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    padding: 0%;
+    margin: 0%;
+}
+
+.context{
+    position: absolute;
+    top: 12%;
+    left: 0;
+    background: #000;
+    height: 100vh;
+    width: fit-content;
+    text-align: center;
+    mix-blend-mode: multiply;
+
+
+}
+
+
+.context>h1{
+    color:white;
+    font-size: 80px;
+    width: 96.5vw;
+}
+
+.context>p{
+    color:white;
+    font-size: 20px;
+    width: 500px;
+    margin: auto;
+    text-wrap: wrap;
+    overflow-x: hidden;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.purchasebtn{
+    position:absolute;
+    width: fit-content;
+    height: fit-content;
+    z-index: 5;
+    top: -5%;
+    left: 42.5%;
+}
+
+
+
+/* dress collection */
+
+.collection{
+    width: 95vw;
+    min-height: 300px;
+    max-height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+h1{
+    color: black;  
+    margin-left: 50px;  
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hoodie{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    row-gap: 25px;
+}
+
+.item, .titem{
+    width: 300px;
+    height: fit-content;
+    margin-left: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  -20px 20px 60px #bebebe,
+             20px -20px 60px #ffffff;
+    mix-blend-mode: multiply;
+}
+
+
+
+.dresspic{
+    width: 200px;
+    height: 250px;
+    background-image: url("./clothimg/image1.jpg");
+    background-size: cover;
+    margin: auto;
+    mix-blend-mode:multiply;
+    
+}
+
+.tdresspic{
+    width: 250px;
+    height: 250px;
+    background-image: url("./clothimg/timage1.jpg");
+    background-size: cover;
+    margin: auto;
+    mix-blend-mode:multiply;
+    
+}
+
+.dressinfo>p{
+font-family: 'Signika Negative', sans-serif;
+font-size: small;
+}  
+
+
+h4{
+    text-align: center;
+}
+
+p{
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+
+.priceinfo{
+    display: grid;
+    grid-template-columns:2fr 2fr;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 30px;
+    text-align: end;
+}
+
+.actual-price {
+    text-align: center;
+    opacity: 0.5;
+    font-size: 30PX;
+    text-decoration: line-through;
+    
+  }
+
+.btngroup{
+    display: grid;
+    grid-template-columns: 1fr ;
+    row-gap: 10px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.btngroup>button{
+    width: 250px;
+    margin: auto;
+}
+
+.tshirt{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    row-gap: 25px;
+}
+
+
+/* animated button */
+
+button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+   
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+}
+   
+button:hover {
+    color: #e8e8e8;
+}
+   
+button:hover::before {
+    width: 100%;
+}
